@@ -38,7 +38,6 @@ function playSound(e) {
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if (!audio) return;
 
-    window.addEventListener('playing', function(e) { console.log('hello') });
     key.classList.add('playing');
     audio.currentTime = 0;
     audio.play();
